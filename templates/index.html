@@ -1,1 +1,7 @@
-<h1>index.html</h1>
+<h1>list.html</h1>
+
+{object_list}
+{% for object in object_list %}
+    <h2>{{ object.title }}</h2
+        <a href="{% url 'detail' object.pk %}">read More</a>
+        <a href="{% url 'delete' object.pk %}">delete</a>
